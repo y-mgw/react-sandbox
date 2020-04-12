@@ -21,6 +21,12 @@
         "es6": true
     },
     "rules": {
+        "react/prop-types": [
+            "error",
+            {
+                "skipUndeclared": true
+            }
+        ],
         "sort-imports": [
             "error",
             {
