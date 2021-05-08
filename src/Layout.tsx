@@ -3,17 +3,17 @@ import styled, { createGlobalStyle } from 'styled-components';
 import { Reset } from 'styled-reset';
 
 export const Layout: React.FC = ({ children }) => {
-  return (
-    <>
-      <Reset />
-      <GlobalStyle />
+    return (
+        <>
+            <Reset />
+            <GlobalStyle />
 
-      <Wrapper>
-        <Header>React Tutorial</Header>
-        <Body>{children}</Body>
-      </Wrapper>
-    </>
-  );
+            <Wrapper>
+                <Header>React Tutorial</Header>
+                <Body>{children}</Body>
+            </Wrapper>
+        </>
+    );
 };
 
 const GlobalStyle = createGlobalStyle`
@@ -33,20 +33,20 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const Wrapper = styled.div`
-  height: 100%;
+    height: 100%;
 `;
 
 const Header = styled.div`
-  display: flex;
-  align-items: center;
-  height: 60px;
-  color: #fff;
-  background-color: #09d3ac;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 0 20px;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    color: #fff;
+    background-color: #09d3ac;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 20px;
 `;
 
 const Body = styled.div`
-  height: calc(100vh - 60px);
+    height: calc(100vh - 60px);
 `;
